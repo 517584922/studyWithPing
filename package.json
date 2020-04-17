@@ -6,6 +6,7 @@
   "scripts": {
     "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
     "build": "npm run clean && npm run build:client",
+    "practice": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.practic.js",
     "clean": "rimraf dist",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js"
   },
